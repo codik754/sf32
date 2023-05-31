@@ -5,6 +5,5 @@
 
 int main(int argc, char **argv){
    ::testing::InitGoogleTest(&argc, argv);
-   //std::cout << "This is main!" << std::endl;
    return RUN_ALL_TESTS();
 }

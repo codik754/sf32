@@ -15,7 +15,7 @@ public:
    explicit ClassThatUsesDB(DBConnection *db) : db_(db) {}
    
    //Деструктор
-   ~ClassThatUsesDB(){}
+   ~ClassThatUsesDB() = default;
    
    bool openConnection(const std::string &host, const std::string &user, const std::string &password);
    void useConnection(const std::string &query, std::vector<std::string> &v);
